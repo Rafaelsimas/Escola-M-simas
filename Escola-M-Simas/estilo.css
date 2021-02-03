@@ -1,0 +1,212 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  font-family: var(--font);
+}
+
+span {
+  color: lightgrey;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.op1 {
+  color: green;
+}
+.op2 {
+  color: orange;
+}
+.op3 {
+  color: red;
+}
+
+:root {
+  --font: 'manrope', sans-serif;
+  --cor-fundo: black;
+  --cor-h1: white;
+  --cor-h3: grey;
+  --cor-p: lightgrey;
+}
+
+img {
+  width: 450px;
+}
+
+/*Envelope do conteudo  */
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.grid {
+  margin-top: 110px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 38px;
+}
+
+/* caixa interna */
+.box1 {
+  /* margin-top: 110px; */
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.box2 {
+  margin-top: -35px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--font);
+  color: var(--cor-h1);
+}
+
+h3 {
+  font-family: var(--font);
+  color: var(--cor-h3);
+  margin-top: 30px;
+}
+
+/* Caixa de texto do javaxcript */
+#root {
+  margin-bottom: 30px;
+  margin-top: 50px;
+  /* border: 1px solid purple; */
+}
+
+label {
+  margin-bottom: 40px;
+  font-family: var(--font);
+  color: var(--cor-h1);
+}
+
+input {
+  margin-bottom: 30px;
+  padding: 30px 90px;
+  border: 2px solid purple;
+  background: none;
+  text-align: center;
+  color: lightgrey;
+  font-weight: bold;
+  border-radius: 9px;
+  transition: all 0.3s ease;
+}
+
+:placeholder {
+  text-align: center;
+}
+
+button {
+  margin-bottom: 30px;
+  padding: 20px 143px;
+  border-radius: 9px;
+  background-color: #410441;
+  color: white;
+  font-weight: bold;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+/* hover */
+
+input:hover {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: purple;
+  color: white;
+  font-weight: bold;
+  border: none;
+}
+
+@media (max-width: 500px) {
+  .grid {
+    /* margin-top: 30px; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 38px;
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  h1 {
+    font-family: var(--font);
+    color: var(--cor-h1);
+    font-size: 30px;
+  }
+
+  h3 {
+    font-family: var(--font);
+    color: var(--cor-h3);
+    margin-top: 30px;
+    font-size: 20px;
+  }
+
+  img {
+    display: none;
+  }
+
+  #root {
+    margin-bottom: 30px;
+    margin-top: 50px;
+    /* border: 1px solid purple; */
+    width: 85%;
+  }
+  .grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 38px;
+  }
+
+  input {
+    margin-bottom: 30px;
+    padding: 30px 93px;
+    border: 2px solid purple;
+    background: none;
+    text-align: center;
+    color: lightgrey;
+    font-weight: bold;
+    border-radius: 9px;
+    transition: all 0.3s ease;
+  }
+
+  button {
+    margin-bottom: 30px;
+    padding: 30px 159px;
+    border-radius: 10px;
+    outline: none;
+    background-color: #410441;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+  }
+}
