@@ -3,34 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/x-icon" href="./assets/favicon/favicon.ico">
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="./assets/favicon/favicon.ico"
+    />
     <link rel="stylesheet" href="./estilo.css" />
-    <title>Escola M. Simas</title>
+    <title>Escola Simas</title>
   </head>
   <body>
-
     <div class="container">
-        <!-- bloco grid -->
-        <div class="grid">
+      <!-- bloco grid -->
+      <div class="grid">
         <!-- Bloco esquerdo -->
         <div class="box1">
-            <h1>Resultado do ano letivo 2021</h1>
-            <h3>Nota dos alunos</h3>
-            <img src="./assets/img/logo.svg" alt="logo do site">
+          <h1>Resultado do ano letivo 2021</h1>
+          <h3>Nota dos alunos</h3>
+          <img src="./assets/img/logo.svg" alt="logo do site" />
         </div>
         <!-- Bloco direito -->
 
         <div class="box2">
-            <div id="root">
-    
-            </div>
-            <label>Resultado</label>
-            <span><strong class="op1">Aprovação(10)</strong>&nbsp;&nbsp; <strong class="op2">Recuperação(de 6 até 8)</strong>&nbsp;&nbsp; <strong class="op3">Reprovação(abaixo de 5)</strong>  </span>
-            <input type="text" placeholder="nome do aluno" id="nome">
-            <input type="text" placeholder="nota do aluno" id="nota">
-            <button id="btn">Resultado</button>
+          <div id="root"></div>
+          <label>Resultado</label>
+          <span
+            ><strong class="op1">Aprovação(de 7 até 10)</strong>&nbsp;&nbsp;
+            <strong class="op2">Recuperação(de 5 até 6)</strong>&nbsp;&nbsp;
+            <strong class="op3">Reprovação(abaixo de 5)</strong>
+          </span>
+          <input type="text" placeholder="nome do aluno" id="nome" />
+          <input type="text" placeholder="nota do aluno" id="nota" />
+          <button id="btn">Resultado</button>
         </div>
-    </div>
+      </div>
     </div>
 
     <script src="./logica.js"></script>
